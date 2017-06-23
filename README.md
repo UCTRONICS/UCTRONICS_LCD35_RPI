@@ -12,7 +12,7 @@ Step1: Expand the sd card first
   
 Step2: Update your raspberry pi system
 
-  >  sudo apt-get update
+ >  sudo apt-get update
 
 Step3: Download the driver package
 
