@@ -6,9 +6,9 @@ In order to use it easier,we provide you operation steps in detail.
 
 Step1: Expand the sd card first
 
-  > sudo raspi-config choose Advanced Operations -> Expand Filesystem 
-  
-  > sudo reboot
+ > sudo raspi-config choose Advanced Operations -> Expand Filesystem 
+ 
+ > sudo reboot
   
 Step2: Update your raspberry pi system
 
