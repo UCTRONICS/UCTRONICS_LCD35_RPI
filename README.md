@@ -5,6 +5,7 @@ This deiver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbe
 In order to use it easier,we provide you operation steps in detail. 
 
 Step1: Expand the sd card first
+
   > sudo raspi-config choose Advanced Operations -> Expand Filesystem 
   
   > sudo reboot
@@ -22,5 +23,17 @@ Step4: Come in the UCTRONICS_LCD35_RPI
   > cd UCTRONICS_LCD35_RPI
   
 Step5: Get run permissions
+
+ > sudo chmod 777 UCTRONICS_LCD_backup
+ 
+ > sudo chmod 777 UCTRONICS_LCD35_install
+ 
+ > sudo chmod 777 UCTRONICS_LCD_restore
+ 
+ > sudo chmod 777 UCTRONICS_LCD_hdmi
+ 
+
+ 
+
 
 
