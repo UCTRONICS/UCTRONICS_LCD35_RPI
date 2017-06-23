@@ -1,0 +1,9 @@
+
+sudo cp ./uctronics_lcd35_rpi/kernel.img /boot/kernel.img
+sudo cp ./uctronics_lcd35_rpi/kernel7.img /boot/
+sudo cp ./uctronics_lcd35_rpi/*.dtb /boot/
+sudo cp ./uctronics_lcd35_rpi/config.txt /boot/config.txt
+sudo cp ./uctronics_lcd35_rpi/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./uctronics_lcd35_rpi/lib/* /lib/
+sudo apt-mark hold raspberrypi-kernel
+sudo reboot

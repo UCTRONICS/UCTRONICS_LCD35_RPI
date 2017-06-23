@@ -1,0 +1,6 @@
+sudo cp ./hdmi/kernel.img /boot/kernel.img
+sudo cp ./hdmi/kernel7.img /boot/
+sudo cp ./hdmi/*.dtb /boot/
+sudo cp ./hdmi/overlays/*.dtb* /boot/overlays/
+sudo cp -rf ./hdmi/lib/* /lib/
+sudo reboot
