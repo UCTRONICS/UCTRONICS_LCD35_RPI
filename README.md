@@ -1,6 +1,6 @@
 # UCTRONICS_LCD35_RPI
 
-This deiver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
+This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
 
 In order to use it easier,we provide you operation steps in detail. 
 
