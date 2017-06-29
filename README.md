@@ -60,7 +60,7 @@ if you want to reuse the pre-installation system, you can use the below command
   
   > cd xinput-calibrator_0.7.5-1_armhf/
   
-  > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb   
+  > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
 
 
 NO2. Install virtual keyboard
