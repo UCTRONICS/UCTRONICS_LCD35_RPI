@@ -91,9 +91,9 @@ if you want to reuse the pre-installation system, you can use the below command
 
 3. Execute the following command
 
- sudo chmod +x /usr/bin/toggle-matchbox-keyboard.sh
- sudo mkdir /usr/local/share/applications
- sudo nano /usr/local/share/applications/toggle-matchbox-keyboard.desktop
+> sudo chmod +x /usr/bin/toggle-matchbox-keyboard.sh
+ >sudo mkdir /usr/local/share/applications
+ >sudo nano /usr/local/share/applications/toggle-matchbox-keyboard.desktop
 
 4. Copy the following contents to toggle - matchbox - keyboard. Desktop, save exit 
 
