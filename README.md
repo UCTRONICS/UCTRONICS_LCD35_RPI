@@ -50,7 +50,21 @@ if you want to reuse the pre-installation system, you can use the below command
  
   > sudo ./UCTRONICS_LCD_hdmi
  
+ Add more functions for the LCD :
  
+ 1. Install calibration software for calibration
+  > cd UCTRONICS_LCD35_RPI
+  
+  > sudo unzip Xinput-calibrator_0.7.5-1_armhf.zip 
+  
+  > cd xinput-calibrator_0.7.5-1_armhf/
+  
+  > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
+  
+  
 
+  
+
+ 
 
 
