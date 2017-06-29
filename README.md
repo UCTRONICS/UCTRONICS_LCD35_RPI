@@ -61,33 +61,33 @@ if you want to reuse the pre-installation system, you can use the below command
   
   > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
   
-NO2. Install virtual keyboard
+ NO2. Install virtual keyboard
 
 1. Execute the following commands to install the corresponding software
 
- sudo apt-get update
+  sudo apt-get update
  
- sudo apt-get install matchbox-keyboard
+  sudo apt-get install matchbox-keyboard
  
- sudo nano /usr/bin/toggle-matchbox-keyboard.sh
+  sudo nano /usr/bin/toggle-matchbox-keyboard.sh
  
 2. Copy the following contents to toggle box - keyboard. Sh, save the exit
 
- #!/bin/bash
+  #!/bin/bash
  
- #This script toggle the virtual keyboard
+  #This script toggle the virtual keyboard
 
- PID=`pidof matchbox-keyboard`
+  PID=`pidof matchbox-keyboard`
 
- if [ ! -e $PID ]; then
+  if [ ! -e $PID ]; then
 
- killall matchbox-keyboard
+  killall matchbox-keyboard
 
- else
+  else
 
- matchbox-keyboard -s 50 extended&
+  matchbox-keyboard -s 50 extended&
  
- fi
+  fi
 
 3. Execute the following command
 
