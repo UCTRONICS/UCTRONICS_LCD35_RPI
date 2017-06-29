@@ -65,91 +65,93 @@ if you want to reuse the pre-installation system, you can use the below command
 
 1. Execute the following commands to install the corresponding software
 
-  sudo apt-get update
+  > sudo apt-get update
  
-  sudo apt-get install matchbox-keyboard
+  > sudo apt-get install matchbox-keyboard
  
-  sudo nano /usr/bin/toggle-matchbox-keyboard.sh
+  > sudo nano /usr/bin/toggle-matchbox-keyboard.sh
  
 2. Copy the following contents to toggle box - keyboard. Sh, save the exit
 
-  #!/bin/bash
+  > #!/bin/bash
  
-  #This script toggle the virtual keyboard
+  > #This script toggle the virtual keyboard
 
-  PID=`pidof matchbox-keyboard`
+  > PID=`pidof matchbox-keyboard`
 
-  if [ ! -e $PID ]; then
+  > if [ ! -e $PID ]; then
 
-  killall matchbox-keyboard
+  > killall matchbox-keyboard
 
-  else
+  > else
 
-  matchbox-keyboard -s 50 extended&
+  > matchbox-keyboard -s 50 extended&
  
-  fi
+  > fi
 
 3. Execute the following command
 
 > sudo chmod +x /usr/bin/toggle-matchbox-keyboard.sh
- >sudo mkdir /usr/local/share/applications
- >sudo nano /usr/local/share/applications/toggle-matchbox-keyboard.desktop
+
+> sudo mkdir /usr/local/share/applications
+
+> sudo nano /usr/local/share/applications/toggle-matchbox-keyboard.desktop
 
 4. Copy the following contents to toggle - matchbox - keyboard. Desktop, save exit 
 
- [Desktop Entry]
+ > [Desktop Entry]
  
- Name=Toggle Matchbox Keyboard
+ > Name=Toggle Matchbox Keyboard
+  
+ > Comment=Toggle Matchbox Keyboard`
  
- Comment=Toggle Matchbox Keyboard`
+ > Exec=toggle-matchbox-keyboard.sh
  
- Exec=toggle-matchbox-keyboard.sh
+ > Type=Application
  
- Type=Application
+ > Icon=matchbox-keyboard.png
  
- Icon=matchbox-keyboard.png
+ > Categories=Panel;Utility;MB
  
- Categories=Panel;Utility;MB
- 
- X-MB-INPUT-MECHANSIM=True
+ > X-MB-INPUT-MECHANSIM=True
  
 5. To perform the following command, note that this step must use the "PI" user permission, and if the administrator privileges are used, the file will not be found
 
-  nano ~/.config/lxpanel/LXDE-pi/panels/panel
+ >  nano ~/.config/lxpanel/LXDE-pi/panels/panel
   
 
  6. Find similar commands (different versions of ICONS may differ)
  
- Plugin {
+ > Plugin {
  
- type = launchbar
+ > type = launchbar
  
- Config {
+ > Config {
  
- Button {
+ > Button {
  
- id=lxde-screenlock.desktop
+ > id=lxde-screenlock.desktop
  
- }
+ > }
  
- Button {
+ > Button {
  
- id=lxde-logout.desktop
+ > id=lxde-logout.desktop
  
- }
+ > }
  
- }
+ > }
 
 7. Add the following code to add a Button item
 
- Button {
+ > Button {
 
- id=/usr/local/share/applications/toggle-matchbox-keyboard.desktop
+ > id=/usr/local/share/applications/toggle-matchbox-keyboard.desktop
 
- }
+ > }
 8. To restart the system with the following command, you can see a virtual keyboard icon in the top left corner
 
-sudo reboot
+ > sudo reboot
 
  
 
