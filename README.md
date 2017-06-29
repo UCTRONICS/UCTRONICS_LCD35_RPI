@@ -53,14 +53,16 @@ if you want to reuse the pre-installation system, you can use the below command
  Add more functions for the LCD :
  
  NO1. Install calibration software for calibration
+ 
   > cd UCTRONICS_LCD35_RPI
   
   > sudo unzip Xinput-calibrator_0.7.5-1_armhf.zip 
   
   > cd xinput-calibrator_0.7.5-1_armhf/
   
-  > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
-  
+  > sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb   
+
+
 NO2. Install virtual keyboard
 
 1. Execute the following commands to install the corresponding software
