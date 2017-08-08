@@ -154,7 +154,19 @@ NO2. Install virtual keyboard
 8. To restart the system with the following command, you can see a virtual keyboard icon in the top left corner
 
  > sudo reboot
-
  
+NO3. How to add new ICON to desktop
+
+> If it's just a folder, add it directly to the desktop
+
+If it is an executable, follow this steps:
+
+> step1: choose the Directory Tree -> / -> usr -> share ->applications folder
+
+> Step2: choose a icon you want to link 
+
+> Step3: choose edit -> create link... ->Desktop ->OK
+
+
 
 
