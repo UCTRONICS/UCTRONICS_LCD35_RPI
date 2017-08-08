@@ -155,7 +155,7 @@ NO2. Install virtual keyboard
 
  > sudo reboot
  
-NO3. How to add new ICON to desktop
+NO3. How to add new ICON to desktop ?
 
 > If it's just a folder, add it directly to the desktop
 
