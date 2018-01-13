@@ -81,6 +81,22 @@ If you want to display on hdmi instead of LCD,just use the below command
 
 > sudo ./UCTRONICS_LCD_hdmi
 
+# Q8: How to burn the UCTRONICS_LCD35_RPI.img?
+
+> Step1: Download the burn tools from https://github.com/UCTRONICS/Win32DiskImager.git 
+
+> Step2: Download the UCTRONICS_LCD35_RPI.img file from 
+
+> http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_RPI.img 
+
+> Step3: Open the SDFormatter to format your SD card 
+
+> Step4: Open the Win32DiskImager to write the  UCTRONICS_LCD35_RPI.img to your SD card.
+
+> For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
+
+
+
 
 
  
