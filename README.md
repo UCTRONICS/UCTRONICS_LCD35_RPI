@@ -171,6 +171,13 @@ If it is an executable, follow this steps:
 
 > Step3: choose edit -> create link... ->Desktop ->OK
 
+NO4. How to rotate the screen to 180 degree ?
+
+>  cd UCTRONICS_LCD35_RPI
+>  sudo chmod 777 UCTRONICS_LCD35_rotation_180_install
+>  sudo ./UCTRONICS_LCD35_rotation_180_install
+
+
 
 
 
