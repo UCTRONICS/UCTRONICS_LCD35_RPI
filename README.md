@@ -179,6 +179,11 @@ NO4. How to rotate the screen to 180 degree ?
 
 >  sudo ./UCTRONICS_LCD35_rotation_180_install
 
+# Rotation =0
+![Alt text](https://github.com/UCTRONICS/pic/blob/master/LCD35_SPI_0.jpg)
+# Rotation =180
+![Alt text](https://github.com/UCTRONICS/pic/blob/master/LCD35_SPI_180.jpg)
+
 
 
 
