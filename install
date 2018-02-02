@@ -1,0 +1,16 @@
+echo Downloading UCTRONICS_LCD35_RPI library, please waiting...
+sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
+echo Download OK.
+cd UCTRONICS_LCD35_RPI
+sudo chmod 777 UCTRONICS_LCD_backup
+sudo chmod 777 UCTRONICS_LCD35_install
+sudo chmod 777 UCTRONICS_LCD_restore
+sudo chmod 777 UCTRONICS_LCD_hdmi
+echo Backing up data, please waiting...
+sudo ./UCTRONICS_LCD_backup
+echo Back up OK.
+echo Installing the LCD35 driver, please waiting...
+sudo ./UCTRONICS_LCD35_install
+echo Install OK
+echo Now ,the system will reboot, please waiting ...
+
