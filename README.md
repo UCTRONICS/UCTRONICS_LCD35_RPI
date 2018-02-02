@@ -6,11 +6,12 @@ https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
 Install the UCTRONICS_LCD35_RPI is very easy.
 
-just run 
+Just run 
 > wget https://raw.githubusercontent.com/UCTRONICS/UCTRONICS_LCD35_RPI/master/install
 
 > sudo ./install
 
+If you want to know the detail  operations see the follows.
 
 This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
 
