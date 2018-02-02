@@ -8,7 +8,7 @@ Install the UCTRONICS_LCD35_RPI is very easy.
 
 Just run 
 > wget https://raw.githubusercontent.com/UCTRONICS/UCTRONICS_LCD35_RPI/master/install
-
+> sudo chmod +x install
 > sudo ./install
 
 If you want to know the detail  operations see the follows.
