@@ -26,7 +26,7 @@ You should recalibrate the touchscreen.
  # Q2: How to write UCTRONICS RPI LCD3 5 Screen image to the SD card Windows?
  
  A2:
- > You can refer to the below video :
+ - You can refer to the below video :
  
  Image can be downloaded from http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_RPI.img
  
@@ -36,64 +36,71 @@ You should recalibrate the touchscreen.
 
 A7:
 - Step1: Expand the sd card first
-
-> sudo raspi-config choose Advanced Operations -> Expand Filesystem
->  sudo reboot
+``Bash
+ sudo raspi-config choose Advanced Operations -> Expand Filesystem
+``
+``Bash
+ sudo reboot
+``
 
 - Step2: Update your raspberry pi system
-
-> sudo apt-get update
-
+``Bash
+ sudo apt-get update
+``
 - Step3: Download the driver package
-
-> sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
+``Bash
+ sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
+``
 
 - Step4: Come in the UCTRONICS_LCD35_HDMI_RPI
-
-> cd UCTRONICS_LCD35_RPI
-
+``Bash
+ cd UCTRONICS_LCD35_RPI
+``
 - Step5: Get run permissions
-
-> sudo chmod 777 UCTRONICS_LCD_backup
-
-> sudo chmod 777 UCTRONICS_LCD35_install
-
-> sudo chmod 777 UCTRONICS_LCD_restore
-
-> sudo chmod 777 UCTRONICS_LCD_hdmi
-
+``Bash
+sudo chmod 777 UCTRONICS_LCD_backup
+``
+``Bash
+sudo chmod 777 UCTRONICS_LCD35_install
+``
+``Bash
+sudo chmod 777 UCTRONICS_LCD_restore
+``
+``Bash
+sudo chmod 777 UCTRONICS_LCD_hdmi
+``
 
 - Step6: backup data
-
-> sudo ./UCTRONICS_LCD_backup
-
+``Bash
+sudo ./UCTRONICS_LCD_backup
+``
 - Step7: install our UCTRONICS LCD35 RPI driver
-
-> sudo ./UCTRONICS_LCD35_install
-
+``Bash
+sudo ./UCTRONICS_LCD35_install
+``
 wait a while the system will be installed and restarted automatically.
 
 if you want to reuse the pre-installation system, you can use the below command
-
-> sudo ./UCTRONICS_LCD_restore
-
+``Bash
+sudo ./UCTRONICS_LCD_restore
+``
 If you want to display on hdmi instead of LCD,just use the below command
-
-> sudo ./UCTRONICS_LCD_hdmi
-
+``Bash
+sudo ./UCTRONICS_LCD_hdmi
+``
 # Q8: How to burn the UCTRONICS_LCD35_RPI.img?
 
-> Step1: Download the burn tools from https://github.com/UCTRONICS/Win32DiskImager.git 
+- Step1: Download the burn tools from https://github.com/UCTRONICS/Win32DiskImager.git 
 
-> Step2: Download the UCTRONICS_LCD35_RPI.img file from 
+- Step2: Download the UCTRONICS_LCD35_RPI.img file from 
 
-> http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_RPI.img 
+ http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_RPI.img 
 
-> Step3: Open the SDFormatter to format your SD card 
+- Step3: Open the SDFormatter to format your SD card 
 
-> Step4: Open the Win32DiskImager to write the  UCTRONICS_LCD35_RPI.img to your SD card.
+- Step4: Open the Win32DiskImager to write the  UCTRONICS_LCD35_RPI.img to your SD card.
 
-> For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
+ For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
 
 
 
