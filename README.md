@@ -4,8 +4,8 @@
 
 https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
-Install the UCTRONICS_LCD35_RPI is very easy.<br>
- Just run 
+### Install the UCTRONICS_LCD35_RPI is very easy.<br>
+ ### Just run 
 ```Bash
 wget https://raw.githubusercontent.com/UCTRONICS/UCTRONICS_LCD35_RPI/master/install
 ```
@@ -15,11 +15,11 @@ sudo chmod +x install
 ```Bash
 sudo ./install 
 ```
-If you want to know the detail  operations see the follows.
+### If you want to know the detail  operations see the follows.
 
-This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
+### This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
 
-In order to use it easier,we provide you operation steps in detail. 
+### In order to use it easier,we provide you operation steps in detail. 
 
 - Step1: Expand the sd card first
 ```Bash
@@ -62,16 +62,16 @@ cd UCTRONICS_LCD35_RPI
 ```Bash
  sudo ./UCTRONICS_LCD35_install
 ``` 
-wait a while the system will be installed and restarted automatically.<br>
-if you want to reuse the pre-installation system, you can use the below command
+### wait a while the system will be installed and restarted automatically.<br>
+### if you want to reuse the pre-installation system, you can use the below command
 ```Bash
  sudo ./UCTRONICS_LCD_restore
 ```
- If you want to display on hdmi instead of LCD,just use the below command
+ ### If you want to display on hdmi instead of LCD,just use the below command
 ```Bash 
    sudo ./UCTRONICS_LCD_hdmi
 ```
- Add more functions for the LCD :
+### Add more functions for the LCD :
  
  - NO1. Install calibration software for calibration
 ```Bash 
@@ -162,9 +162,9 @@ id=lxde-logout.desktop
  
 - NO3. How to add new ICON to desktop ?
 
-> If it's just a folder, add it directly to the desktop
+### If it's just a folder, add it directly to the desktop
 
-If it is an executable, follow this steps:
+### If it is an executable, follow this steps:
 
 * step1: choose the Directory Tree -> / -> usr -> share ->applications folder
 
