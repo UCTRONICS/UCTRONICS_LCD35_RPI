@@ -2,7 +2,7 @@
 
 # Any problems, please refer to our troubleshootings 
 
-https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
+### https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
 ### Install the UCTRONICS_LCD35_RPI is very easy.<br>
  ### Just run 
