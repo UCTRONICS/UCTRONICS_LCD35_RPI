@@ -1,5 +1,5 @@
 # UCTRONICS_LCD35_RPI  (SKU: U4703)
-
+# this driver is used for LCD35 with SPI interface
 # Any problems, please refer to our troubleshootings 
 
 ### https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
