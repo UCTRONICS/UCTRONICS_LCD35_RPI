@@ -1,4 +1,4 @@
-# UCTRONICS_LCD35_RPI
+# UCTRONICS_LCD35_RPI  (SKU: U4703)
 
 # Any problems, please refer to our troubleshootings 
 
