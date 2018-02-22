@@ -1,8 +1,7 @@
 # If you have any problems, please feel free to contact us and we will try our best to help you.
 
 # Q1:Some zones working much better than others, the near edge zones seem the worst.
-
-A1: 
+ 
 You should recalibrate the touchscreen. 
 
 - 1.Downloading our UCTRONICS_LCD35_HDMI_RPI package from https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
@@ -25,16 +24,14 @@ You should recalibrate the touchscreen.
  
  # Q2: How to write UCTRONICS RPI LCD3 5 Screen image to the SD card Windows?
  
- A2:
  - You can refer to the below video :
  
  Image can be downloaded from http://uctronics.oss-us-west-1.aliyuncs.com/LCD35/image/UCTRONICS_LCD35_RPI.img
  
  [![IMAGE ALT TEXT](https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/image/5.jpeg)](https://youtu.be/cCw91wH6mnc "How to write UCTRONICS SPI LCD3 5 Screen image to the SD card Windows The Raspberry Pi Beginners Guide")
 
-# Q7: How to install the touchscreen driver and display driver for SPI LCD35 
+# Q3: How to install the touchscreen driver and display driver for SPI LCD35 
 
-A7:
 - Step1: Expand the sd card first
 ```Bash
  sudo raspi-config choose Advanced Operations -> Expand Filesystem
