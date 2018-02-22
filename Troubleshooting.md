@@ -102,6 +102,11 @@ sudo ./UCTRONICS_LCD_hdmi
 
  For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
 
+# Q9: Why the HDMI display stop at rainbow ?
+
+ After loading our LCD35 SPI driver, the system just support our LCD35 screen which means you can't use the HDMi screen.
+ 
+
 
 
 
