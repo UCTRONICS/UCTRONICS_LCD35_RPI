@@ -38,7 +38,7 @@ sudo reboot
  sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
 ```
 - Step4: Come in the UCTRONICS_LCD35_RPI
-```
+```Bash
 cd UCTRONICS_LCD35_RPI
 ```  
 - Step5: Get run permissions
