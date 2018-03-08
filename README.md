@@ -27,8 +27,7 @@ sudo raspi-config choose Advanced Operations -> Expand Filesystem
 ```
 ```Bash
 sudo reboot
- ```
-  
+ ```  
 - Step2: Update your raspberry pi system
 ```Bash
  sudo apt-get update
@@ -38,8 +37,9 @@ sudo reboot
  sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
 ```
 - Step4: Come in the UCTRONICS_LCD35_RPI
+
 ```Bash
-cd UCTRONICS_LCD35_RPI
+ cd UCTRONICS_LCD35_RPI
 ```  
 - Step5: Get run permissions
 ```Bash
