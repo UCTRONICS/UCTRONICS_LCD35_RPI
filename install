@@ -1,0 +1,29 @@
+echo Downloading UCTRONICS_LCD35_RPI library, please waiting...
+sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
+echo Download OK.
+cd /home/pi/UCTRONICS_LCD35_RPI
+echo Install calibration software for calibration...
+sudo unzip Xinput-calibrator_0.7.5-1_armhf.zip
+cd /home/pi/UCTRONICS_LCD35_RPI/xinput-calibrator_0.7.5-1_armhf/
+sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
+echo Install virtual keyboard
+sudo apt-get install matchbox-keyboard
+sudo cp /home/pi/UCTRONICS_LCD35_RPI/toggle-matchbox-keyboard.sh /usr/bin/
+sudo chmod +x /usr/bin/toggle-matchbox-keyboard.sh
+sudo mkdir /usr/local/share/applications
+sudo cp /home/pi/UCTRONICS_LCD35_RPI/toggle-matchbox-keyboard.desktop /usr/local/share/applications/
+sudo chmod 777 /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+sudo cp /home/pi/UCTRONICS_LCD35_RPI/panel /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+cd /home/pi/UCTRONICS_LCD35_RPI
+sudo chmod 777 UCTRONICS_LCD_backup
+sudo chmod 777 UCTRONICS_LCD35_install
+sudo chmod 777 UCTRONICS_LCD_restore
+sudo chmod 777 UCTRONICS_LCD_hdmi
+echo Backing up data, please waiting...
+sudo ./UCTRONICS_LCD_backup
+echo Back up OK.
+echo Installing the LCD35 driver, please waiting...
+sudo ./UCTRONICS_LCD35_install
+echo Install OK
+echo Now ,the system will reboot, please waiting ...
+
