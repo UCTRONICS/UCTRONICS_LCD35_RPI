@@ -1,6 +1,17 @@
+echo Now begin install the HDMI display ...
+echo copying the kernel.img ...
 sudo cp ./hdmi/kernel.img /boot/kernel.img
 sudo cp ./hdmi/kernel7.img /boot/
+echo copy the kernel.img OK.
+echo copying the .dtb files ...
 sudo cp ./hdmi/*.dtb /boot/
+sudo cp ./hdmi/config.txt /boot/
 sudo cp ./hdmi/overlays/*.dtb* /boot/overlays/
+echo copy the .dtb files OK.
+
+echo copying the lib files...
+This steps need a long time, please be patient...
 sudo cp -rf ./hdmi/lib/* /lib/
+echo copy the lib files OK.
+echo Now automatic reboot and your raspberry pi will support display on hdmi screen.
 sudo reboot
