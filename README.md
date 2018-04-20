@@ -36,6 +36,7 @@ sudo reboot
 ```Bash
  sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
 ```
+ ![EasyBehavior](/gif/download.gif) 
 - Step4: Come in the UCTRONICS_LCD35_RPI
 ```Bash
  cd UCTRONICS_LCD35_RPI
