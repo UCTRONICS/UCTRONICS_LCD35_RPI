@@ -41,6 +41,7 @@ sudo reboot
 ```Bash
  cd UCTRONICS_LCD35_RPI
 ```
+ ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/cd_uctronics_lcd35_rpi.gif) 
 - Step5: Get run permissions
 ```Bash
  sudo chmod 777 UCTRONICS_LCD_backup
@@ -54,14 +55,18 @@ sudo reboot
 ```Bash
  sudo chmod 777 UCTRONICS_LCD_hdmi
  ```
+ ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/change_permission.gif) 
+ 
 - Step6: backup data
 ```Bash
  sudo ./UCTRONICS_LCD_backup
 ``` 
+ ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/backup.gif) 
 - Step7: install the LCD35 driver
 ```Bash
  sudo ./UCTRONICS_LCD35_install
 ``` 
+ ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/install_lcd35.gif) 
 ### wait a while the system will be installed and restarted automatically.<br>
 ### if you want to reuse the pre-installation system, you can use the below command
 ```Bash
