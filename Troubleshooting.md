@@ -100,10 +100,15 @@ sudo ./UCTRONICS_LCD_hdmi
  For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
 
 # Q9: Why the HDMI display stop at rainbow ?
-
+```Bash
  After loading our LCD35 SPI driver, the system just support our LCD35 screen which means you can't use the HDMi screen.
- 
+```
+# Q10: Why the the screen is always white and doesn't display anything?
 
+```Bash
+1. Please ensure the hardware connection is normal.If the hardware connection is defective, the lcd will not work fine.
+2. Please ensure you install the LCD35 driver,if you don't install it , the lcd will not work fine.
+   
 
 
 
