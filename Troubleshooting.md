@@ -107,8 +107,9 @@ sudo ./UCTRONICS_LCD_hdmi
 
 ```Bash
 1. Please ensure the hardware connection is normal.If the hardware connection is defective, the lcd will not work fine.
-2. Please ensure you install the LCD35 driver following the https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/README.md
-   .if you don't install it , the lcd will not work fine.
+2. Please ensure you install the LCD35 driver following the 
+https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/README.md
+ if you don't install it , the lcd will not work fine.
 ```
  
    
