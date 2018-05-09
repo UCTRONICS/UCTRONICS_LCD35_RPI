@@ -85,7 +85,7 @@ If you want to display on hdmi instead of LCD,just use the below command
 ```Bash
 sudo ./UCTRONICS_LCD_hdmi
 ```
-# Q8: How to burn the UCTRONICS_LCD35_RPI.img?
+# Q4: How to burn the UCTRONICS_LCD35_RPI.img?
 
 - Step1: Download the burn tools from https://github.com/UCTRONICS/Win32DiskImager.git 
 
@@ -99,11 +99,11 @@ sudo ./UCTRONICS_LCD_hdmi
 
  For more details please refer to our video demo from https://www.youtube.com/watch?v=cCw91wH6mnc 
 
-# Q9: Why the HDMI display stop at rainbow ?
+# Q5: Why the HDMI display stop at rainbow ?
 
 After loading our LCD35 SPI driver, the system just support our LCD35 screen which means you can't use the HDMi screen.
 
-# Q10: Why the the screen is always white and doesn't display anything?
+# Q6: Why the the screen is always white and doesn't display anything?
 
 1. Please ensure the hardware connection is normal.If the hardware connection is defective, the lcd will not work fine.
 
