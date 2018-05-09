@@ -105,7 +105,7 @@ After loading our LCD35 SPI driver, the system just support our LCD35 screen whi
 
 # Q6: Why the the screen is always white and doesn't display anything?
 
-1. Please ensure the hardware connection is normal.If the hardware connection is defective, the lcd will not work fine.
+1. Please ensure the hardware connection is normal.If the hardware connection is incorrect, the lcd will not work fine.
 
 2. Please ensure you have installed the LCD35 driver following the 
 https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/README.md
