@@ -1,9 +1,11 @@
 # UCTRONICS_LCD35_RPI  (SKU: U4703)
 ## This driver is used for UCTRONICS LCD35 with SPI interface
+
 ##  Revision History:
 - 2018-05-30 : add support rotate 0/ 90/ 180/ 270 degree
+
 ## Any problems, please refer to our troubleshootings 
-### https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
+- https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
 ## Easy Install
 ```Bash
@@ -16,34 +18,29 @@ sudo chmod +x install
 sudo ./install 
 
 ```
-### If you want to know the detail  operations see the follows.
-
-### This driver package is used for UCTRONICS 3.5 inches LCD which can run on Raspbery Pi zero Pi2 Pi3 Model B/B+ paltforms.
-
-### In order to use it easier,we provide you operation steps in detail. 
-
-- Step1: Expand the sd card first
+## Detail operations 
+### Step1: Expand the sd card first
 ```Bash
 sudo raspi-config choose Advanced Operations -> Expand Filesystem 
 ```
 ```Bash
 sudo reboot
 ```
-- Step2: Update your raspberry pi system
+### Step2: Update your raspberry pi system
 ```Bash
  sudo apt-get update
 ```
-- Step3: Download the driver package
+### Step3: Download the driver package
 ```Bash
  sudo git clone https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI.git
 ```
  ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/download.gif) 
-- Step4: Come in the UCTRONICS_LCD35_RPI
+### Step4: Come in the UCTRONICS_LCD35_RPI
 ```Bash
  cd UCTRONICS_LCD35_RPI
 ```
  ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/cd_uctronics_lcd35_rpi.gif) 
-- Step5: Get run permissions
+### Step5: Get run permissions
 ```Bash
  sudo chmod 777 UCTRONICS_LCD_backup
 ```
@@ -58,28 +55,30 @@ sudo reboot
  ```
  ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/change_permission.gif) 
  
-- Step6: backup data
+### Step6: backup data
 ```Bash
  sudo ./UCTRONICS_LCD_backup
 ``` 
  ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/backup.gif) 
-- Step7: install the LCD35 driver
+ 
+### Step7: install the LCD35 driver
 ```Bash
  sudo ./UCTRONICS_LCD35_install
 ``` 
  ![EasyBehavior](https://github.com/UCTRONICS/pic/blob/master/gif/install_lcd35.gif) 
-### wait a while the system will be installed and restarted automatically.<br>
-### if you want to reuse the pre-installation system, you can use the below command
+ 
+ wait a while the system will be installed and restarted automatically.
+ 
+ ### Reuse the pre-installation system
 ```Bash
  sudo ./UCTRONICS_LCD_restore
 ```
- ### If you want to display on hdmi instead of LCD,just use the below command
+ ### display on hdmi 
 ```Bash 
    sudo ./UCTRONICS_LCD_hdmi
 ```
-### Add more functions for the LCD :
- 
- - NO1. Install calibration software for calibration
+## Add more functions for the LCD :
+ ### NO1. Install calibration software for calibration
 ```Bash 
   cd UCTRONICS_LCD35_RPI
 ```
@@ -93,7 +92,7 @@ sudo reboot
   sudo dpkg -i -B xinput-calibrator_0.7.5-1_armhf.deb
 ```
 
-- NO2. Install virtual keyboard
+### NO2. Install virtual keyboard
 
 - 1. Execute the following commands to install the corresponding software
 ```Bash
@@ -166,7 +165,7 @@ id=lxde-logout.desktop
   sudo reboot
 ```
  
-- NO3. How to add new ICON to desktop ?
+## Add new ICON to desktop ?
 
 ### If it's just a folder, add it directly to the desktop
 
@@ -178,19 +177,35 @@ id=lxde-logout.desktop
 
 * Step3: choose edit -> create link... ->Desktop ->OK
 
-- NO4. How to rotate the screen to 180 degree ?
+## Rotate the screen to 0/90/180/270 degree
 ```Bash
-cd UCTRONICS_LCD35_RPI
+cd ~UCTRONICS_LCD35_RPI
 ```
+- For rotate 0 ：
 ```Bash
-sudo chmod 777 UCTRONICS_LCD35_rotation_180_install
+             sudo chmod +x UCTRONICS_LCD35_install
+             sudo ./UCTRONICS_LCD35_install 
 ```
+
+- For rotate 90 ：
 ```Bash
-sudo ./UCTRONICS_LCD35_rotation_180_install
+            sudo chmod +x UCTRONICS_LCD35_rotation_90_install 
+            sudo ./UCTRONICS_LCD35_rotation_90_install 
 ```
-# Rotation =0
+For rotate 180 ：
+```Bash
+            sudo chmod +x UCTRONICS_LCD35_rotation_180_install 
+            sudo ./UCTRONICS_LCD35_rotation_180_install
+```
+For rotate 270 ：
+```Bash
+            sudo chmod +x UCTRONICS_LCD35_rotation_270_install 
+            sudo ./UCTRONICS_LCD35_rotation_270_install
+```
+
+### Rotation =0
 ![Alt text](https://github.com/UCTRONICS/pic/blob/master/LCD35_SPI_0.jpg)
-# Rotation =180
+### Rotation =180
 ![Alt text](https://github.com/UCTRONICS/pic/blob/master/LCD35_SPI_180.jpg)
 
 
