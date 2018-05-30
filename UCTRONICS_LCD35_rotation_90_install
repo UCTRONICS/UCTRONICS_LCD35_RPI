@@ -1,0 +1,20 @@
+echo Now begin install UCTRONICS_LCD35 driver...
+echo copying the kernel.img file...
+sudo cp ./uctronics_lcd35_rpi/kernel.img /boot/kernel.img 
+sudo cp ./uctronics_lcd35_rpi/kernel7_90.img /boot/kernel7.img
+echo copy kernel.img OK.
+
+echo copying the .dtb files...
+sudo cp ./uctronics_lcd35_rpi/*.dtb /boot/
+sudo cp ./uctronics_lcd35_rpi/config.txt /boot/config.txt
+sudo cp ./uctronics_lcd35_rpi/overlays/*.dtb* /boot/overlays/
+echo copy the .dtb files OK.
+
+echo copying the lib files...
+echo This step need a long time, please be patient... 
+sudo cp -rf ./uctronics_lcd35_rpi/lib/* /lib/
+echo copy the lib files OK.
+
+sudo apt-mark hold raspberrypi-kernel
+echo Congratulatons! Now automatic reboot your raspberryPi and it will support UCTRONICS LCD35 screen.
+sudo reboot
