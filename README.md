@@ -1,11 +1,11 @@
 # UCTRONICS_LCD35_RPI  (SKU: U4703)
-# This driver is used for LCD35 with SPI interface
-# Any problems, please refer to our troubleshootings 
-
+## This driver is used for UCTRONICS LCD35 with SPI interface
+##  Revision History:
+- 2018-05-30 : add support rotate 0/ 90/ 180/ 270 degree
+## Any problems, please refer to our troubleshootings 
 ### https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
-### Install the UCTRONICS_LCD35_RPI is very easy.<br>
- ### Just run 
+## Easy Install
 ```Bash
 wget https://raw.githubusercontent.com/UCTRONICS/UCTRONICS_LCD35_RPI/master/install
 ```
@@ -14,6 +14,7 @@ sudo chmod +x install
 ```
 ```Bash
 sudo ./install 
+
 ```
 ### If you want to know the detail  operations see the follows.
 
