@@ -4,7 +4,8 @@
 ##  Revision History:
 - 2018/05/30 : Add support rotate 0/ 90/ 180/ 270 degree for Pi3B and Pi3B+
 - 2018/05/30 ：Optimize the bug of making kernel panic  
-
+- 2018/06/01 : Add support rotate 0/ 90/ 180/ 270 degree for Pi zero and Pi B+
+ 
 ## Any problems, please refer to our troubleshootings 
 - https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
 
