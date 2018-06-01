@@ -2,7 +2,8 @@
 ## This driver is used for UCTRONICS LCD35 with SPI interface
 
 ##  Revision History:
-- 2018-05-30 : add support rotate 0/ 90/ 180/ 270 degree
+- 2018/05/30 : Add support rotate 0/ 90/ 180/ 270 degree for Pi3B and Pi3B+
+- 2018/05/30 ：Optimize the bug of making kernel panic  
 
 ## Any problems, please refer to our troubleshootings 
 - https://github.com/UCTRONICS/UCTRONICS_LCD35_RPI/blob/master/Troubleshooting.md
