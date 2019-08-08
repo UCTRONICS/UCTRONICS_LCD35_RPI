@@ -1,5 +1,6 @@
 sudo cp  /boot/kernel.img  ./backup/kernel.img
 sudo cp  /boot/kernel7.img     ./backup/kernel7.img 
+sudo cp  /boot/kernel7l.img     ./backup/kernel7l.img 
 
 sudo cp /boot/*.dtb ./backup/
 sudo cp /boot/overlays/*.dtb* ./backup/overlays/
