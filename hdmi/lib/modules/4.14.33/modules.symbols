@@ -124,6 +124,7 @@ alias symbol:dlm_posix_get dlm
 alias symbol:irda_register_dongle sir_dev
 alias symbol:synth_putwc_s speakup
 alias symbol:arizona_in_vi_ramp snd_soc_arizona
+alias symbol:cfb_copyarea cfbcopyarea
 alias symbol:drm_of_component_probe drm
 alias symbol:drm_rect_rotate drm
 alias symbol:s5h1409_attach s5h1409
@@ -328,7 +329,6 @@ alias symbol:iio_channel_get_all industrialio
 alias symbol:lbtf_bcn_sent libertas_tf
 alias symbol:mux_control_deselect mux_core
 alias symbol:nf_reject_iphdr_put nf_reject_ipv4
-alias symbol:sys_copyarea syscopyarea
 alias symbol:usb_ftdi_elan_read_pcimem ftdi_elan
 alias symbol:ax25_send_frame ax25
 alias symbol:adxl34x_remove adxl34x
@@ -831,6 +831,7 @@ alias symbol:dvb_usbv2_reset_resume dvb_usb_v2
 alias symbol:ezusb_fx1_set_reset ezusb
 alias symbol:md_allow_write md_mod
 alias symbol:nf_nat_follow_master nf_nat
+alias symbol:cfb_fillrect cfbfillrect
 alias symbol:drm_dp_downstream_debug drm_kms_helper
 alias symbol:rt2x00lib_set_mac_address rt2x00lib
 alias symbol:ar9003_mci_set_bt_version ath9k_hw
@@ -2082,6 +2083,7 @@ alias symbol:serdev_device_wait_until_sent serdev
 alias symbol:nf_ct_helper_expectfn_find_by_name nf_conntrack
 alias symbol:cx231xx_enable656 cx231xx
 alias symbol:snd_device_register snd
+alias symbol:cfb_imageblit cfbimgblt
 alias symbol:em28xx_unregister_extension em28xx
 alias symbol:v4l2_ctrl_add_handler videodev
 alias symbol:arizona_init_dai snd_soc_arizona
@@ -2139,7 +2141,6 @@ alias symbol:smscore_translate_msg smsmdtv
 alias symbol:vb2_core_streamon videobuf2_core
 alias symbol:ath_regd_get_band_ctl ath
 alias symbol:cfg80211_classify8021d cfg80211
-alias symbol:fb_sys_read fb_sys_fops
 alias symbol:__media_device_usb_init media
 alias symbol:hci_resume_dev bluetooth
 alias symbol:tinydrm_resume tinydrm
@@ -3173,7 +3174,6 @@ alias symbol:sirdev_set_dongle sir_dev
 alias symbol:btintel_load_ddc_config btintel
 alias symbol:drm_crtc_vblank_count drm
 alias symbol:dvb_usb_generic_rw dvb_usb
-alias symbol:sys_fillrect sysfillrect
 alias symbol:md_stop_writes md_mod
 alias symbol:ar9003_paprd_setup_gain_table ath9k_hw
 alias symbol:dm_array_del dm_persistent_data
@@ -3780,7 +3780,6 @@ alias symbol:ar9003_paprd_create_curve ath9k_hw
 alias symbol:p9_client_xattrcreate 9pnet
 alias symbol:dm_bitset_resize dm_persistent_data
 alias symbol:irda_notify_init irda
-alias symbol:sys_imageblit sysimgblt
 alias symbol:phy_driver_unregister libphy
 alias symbol:snd_soc_poweroff snd_soc_core
 alias symbol:usb_wwan_open usb_wwan
@@ -4702,7 +4701,6 @@ alias symbol:ath9k_hw_settsf64 ath9k_hw
 alias symbol:dm_tm_inc dm_persistent_data
 alias symbol:tda10086_attach tda10086
 alias symbol:cdrom_ioctl cdrom
-alias symbol:fb_sys_write fb_sys_fops
 alias symbol:l2cap_chan_del bluetooth
 alias symbol:snd_pcm_hw_constraint_mask64 snd_pcm
 alias symbol:stv090x_attach stv090x

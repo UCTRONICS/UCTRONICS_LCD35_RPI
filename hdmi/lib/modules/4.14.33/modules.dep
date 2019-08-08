@@ -126,13 +126,12 @@ kernel/drivers/pwm/pwm-pca9685.ko:
 kernel/drivers/video/backlight/lcd.ko:
 kernel/drivers/video/backlight/gpio_backlight.ko:
 kernel/drivers/video/backlight/rpi_backlight.ko:
-kernel/drivers/video/fbdev/core/sysfillrect.ko:
-kernel/drivers/video/fbdev/core/syscopyarea.ko:
-kernel/drivers/video/fbdev/core/sysimgblt.ko:
-kernel/drivers/video/fbdev/core/fb_sys_fops.ko:
-kernel/drivers/video/fbdev/udlfb.ko: kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/video/fbdev/ssd1307fb.ko: kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/video/fbdev/rpisense-fb.ko: kernel/drivers/mfd/rpisense-core.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
+kernel/drivers/video/fbdev/core/cfbfillrect.ko:
+kernel/drivers/video/fbdev/core/cfbcopyarea.ko:
+kernel/drivers/video/fbdev/core/cfbimgblt.ko:
+kernel/drivers/video/fbdev/udlfb.ko:
+kernel/drivers/video/fbdev/ssd1307fb.ko:
+kernel/drivers/video/fbdev/rpisense-fb.ko: kernel/drivers/mfd/rpisense-core.ko
 kernel/drivers/clk/clk-allo-dac.ko:
 kernel/drivers/clk/clk-hifiberry-dacpro.ko:
 kernel/drivers/regulator/fixed.ko:
@@ -143,14 +142,14 @@ kernel/drivers/tty/serdev/serdev.ko:
 kernel/drivers/char/broadcom/bcm2835_smi_dev.ko: kernel/drivers/misc/bcm2835_smi.ko
 kernel/drivers/gpu/drm/panel/panel-simple.ko: kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/panel/panel-raspberrypi-touchscreen.ko: kernel/drivers/gpu/drm/drm.ko
-kernel/drivers/gpu/drm/drm_kms_helper.ko: kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
+kernel/drivers/gpu/drm/drm_kms_helper.ko: kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/drm.ko:
-kernel/drivers/gpu/drm/vc4/vc4.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/sound/soc/snd-soc-core.ko kernel/sound/core/snd-compress.ko kernel/sound/core/snd-pcm-dmaengine.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/gpu/drm/udl/udl.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/gpu/drm/tinydrm/mipi-dbi.ko: kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/gpu/drm/tinydrm/mi0283qt.ko: kernel/drivers/gpu/drm/tinydrm/mipi-dbi.ko kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/gpu/drm/tinydrm/repaper.ko: kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
+kernel/drivers/gpu/drm/vc4/vc4.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko kernel/sound/soc/snd-soc-core.ko kernel/sound/core/snd-compress.ko kernel/sound/core/snd-pcm-dmaengine.ko kernel/sound/core/snd-pcm.ko kernel/sound/core/snd-timer.ko kernel/sound/core/snd.ko
+kernel/drivers/gpu/drm/udl/udl.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/tinydrm/mipi-dbi.ko: kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/tinydrm/mi0283qt.ko: kernel/drivers/gpu/drm/tinydrm/mipi-dbi.ko kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
+kernel/drivers/gpu/drm/tinydrm/repaper.ko: kernel/drivers/gpu/drm/tinydrm/core/tinydrm.ko kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/video/fbdev/core/cfbfillrect.ko kernel/drivers/video/fbdev/core/cfbimgblt.ko kernel/drivers/video/fbdev/core/cfbcopyarea.ko kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/base/regmap/regmap-mmio.ko:
 kernel/drivers/block/pktcdvd.ko: kernel/drivers/cdrom/cdrom.ko
 kernel/drivers/block/nbd.ko:
@@ -938,37 +937,37 @@ kernel/drivers/staging/rtl8188eu/r8188eu.ko: kernel/net/wireless/cfg80211.ko ker
 kernel/drivers/staging/vt6656/vt6656_stage.ko: kernel/net/mac80211/mac80211.ko kernel/net/wireless/cfg80211.ko kernel/net/rfkill/rfkill.ko
 kernel/drivers/staging/speakup/speakup_soft.ko: kernel/drivers/staging/speakup/speakup.ko
 kernel/drivers/staging/speakup/speakup.ko:
-kernel/drivers/staging/fbtft/fbtft.ko: kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_agm1264k-fl.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_bd663474.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_hx8340bn.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_hx8347d.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_hx8353d.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_hx8357d.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9163.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9320.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9325.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9340.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9341.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9481.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ili9486.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_pcd8544.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ra8875.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_s6d02a1.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_s6d1121.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ssd1289.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ssd1306.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ssd1331.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_ssd1351.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_st7735r.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_st7789v.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_tinylcd.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_tls8204.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_uc1701.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_upd161704.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fb_watterott.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/flexfb.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
-kernel/drivers/staging/fbtft/fbtft_device.ko: kernel/drivers/staging/fbtft/fbtft.ko kernel/drivers/video/fbdev/core/syscopyarea.ko kernel/drivers/video/fbdev/core/sysfillrect.ko kernel/drivers/video/fbdev/core/sysimgblt.ko kernel/drivers/video/fbdev/core/fb_sys_fops.ko
+kernel/drivers/staging/fbtft/fbtft.ko:
+kernel/drivers/staging/fbtft/fb_agm1264k-fl.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_bd663474.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_hx8340bn.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_hx8347d.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_hx8353d.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_hx8357d.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9163.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9320.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9325.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9340.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9341.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9481.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ili9486.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_pcd8544.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ra8875.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_s6d02a1.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_s6d1121.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ssd1289.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ssd1306.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ssd1331.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_ssd1351.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_st7735r.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_st7789v.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_tinylcd.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_tls8204.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_uc1701.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_upd161704.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fb_watterott.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/flexfb.ko: kernel/drivers/staging/fbtft/fbtft.ko
+kernel/drivers/staging/fbtft/fbtft_device.ko: kernel/drivers/staging/fbtft/fbtft.ko
 kernel/drivers/perf/raspberrypi_axi_monitor.ko:
 kernel/drivers/connector/cn.ko:
 kernel/drivers/dax/dax.ko:

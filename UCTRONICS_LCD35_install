@@ -1,7 +1,7 @@
 echo Now begin install UCTRONICS_LCD35 driver...
 echo copying the kernel.img file...
 sudo cp ./uctronics_lcd35_rpi/kernel_0.img /boot/kernel.img 
-sudo cp ./uctronics_lcd35_rpi/kernel7_0.img /boot/kernel7.img
+sudo cp ./uctronics_lcd35_rpi/kernel7.img /boot/kernel7.img
 sudo cp ./uctronics_lcd35_rpi/kernel7l.img /boot/kernel7l.img
 echo copy kernel.img OK.
 
